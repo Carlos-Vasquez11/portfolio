@@ -1,0 +1,269 @@
+/*General*/
+:root{
+    --off-white:             #faf8f7;
+    --just-white:            #fff;
+    --secundary:             #5F738E;
+    --secundary-blue:        #1F3A93;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: var(--off-white);
+    word-wrap: break-word;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Body*/
+
+/*Menu*/
+
+.menu{
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    background-color: var(--secundary-blue);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*Main*/
+
+main{
+    padding-left: 10%;
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Welcome*/
+
+main .welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 200px;
+}
+
+main .welcome h1{
+    font-size: 7rem;
+}
+
+main .welcome h2{
+    font-size: 7rem;
+    color: var(--secundary-blue);
+}
+
+main .welcome p{
+    width: 400px;
+    font-size: 2rem;
+}
+
+main .welcome a{
+    text-decoration: none;
+    color: black;
+    width: 250px;
+    
+}
+
+main .welcome figure {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    width: 300px;
+
+    align-items: center;
+}
+
+main .welcome figure figcaption{
+    padding-left: 15px;
+    color: black;
+    font-size: 1.8rem;
+}
+
+main .welcome figure figcaption a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+main .welcome figure img{
+    width: 42px;
+    height: 42px;
+}
+
+/*Skills*/
+.skills{
+    padding-top: 260px;
+    padding-bottom: 260px;
+
+}
+
+.skills h1{
+    font-size: 5rem;
+    color: var(--secundary-blue);
+    text-align: center;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+figure:hover img {
+    opacity: 0.7;
+}
+
+.skills img{
+    width: 54px;
+    height: 54px;
+
+    margin-left: 50px;
+}
+
+.skills figure{
+    display: flex;
+    align-items: center;
+}
+
+.skills figcaption{
+    margin-right: 40px;
+    margin-left: 40px;
+
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.skills .skills-first{
+    display: flex;
+    padding: 15px;
+}
+
+.skills .skills-second{
+    display: flex;
+    padding: 15px;
+}
+
+.skills .skills-third{
+    padding: 15px;
+}
+
+/*Projects*/
+
+.projects{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.projects h1{
+    font-size: 5rem;
+    color: var(--secundary-blue);
+    text-align: center;
+}
+
+.projects .project-container{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+}
+
+/*a*/
+
+.project-container{
+    position: relative;
+}
+
+.projects .project-container .screenshot:hover {
+    opacity: 0.9;
+    filter: brightness(0.2);
+    
+}
+
+/*a*/
+
+
+
+.projects .project-container img{
+    height: 300px;
+    width: 620px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.projects .project-container .tech-logo img{
+    box-shadow: none;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.projects .project-container figcaption{
+    padding-left: 40px;
+    width: 340px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects .project-container figcaption h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.projects .project-container figcaption p{
+    height: 150px;
+    font-size: 1.8rem;
+}
+
+.projects .project-container figcaption .links-container{
+    width: 340px;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects .project-container figcaption a img{
+    width: 32px;
+    height: 32px;
+    box-shadow: none;
+}
