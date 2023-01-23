@@ -198,26 +198,30 @@ figure:hover img {
 
 .projects .project-container{
     padding: 25px;
+    padding-top: 35px;
+    padding-bottom: 0;
     display: flex;
     align-items: center;
     width: 1000px;
 }
 
-/*a*/
-
-.project-container{
-    position: relative;
+.project-container-skills{
+    display: flex;
+    flex-direction: column;
 }
 
-.projects .project-container .screenshot:hover {
-    opacity: 0.9;
-    filter: brightness(0.2);
-    
+.project-skills{
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
 }
 
-/*a*/
-
-
+.tech-logo{
+    box-shadow: none;
+    margin: 15px;
+    width: 32px;
+    height: 32px;
+}
 
 .projects .project-container img{
     height: 300px;
@@ -225,11 +229,10 @@ figure:hover img {
     box-shadow: 0px 0px 10px gray;
 }
 
-.projects .project-container .tech-logo img{
-    box-shadow: none;
-    margin: 15px;
-    width: 50px;
-    height: 50px;
+.project-skills p{
+    font-size: 24px;
+    color: var(--secundary);
+    font-weight: bold;
 }
 
 .projects .project-container figcaption{
