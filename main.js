@@ -7,8 +7,8 @@ buttonSwitch.addEventListener('click', () => {
   themeLink.href = document.body.classList.contains('dark') ? './styles/dark.css' : './styles/light.css';
 
   //Changing the github Logo
-  let githubImages = document.querySelectorAll('img[src="./assets/Logo_Github.png"],img[src="./assets/Logo_GithubWhite.png"]');
+  let githubImages = document.querySelectorAll('img[src="./assets/Logos/Logo_Github.png"],img[src="./assets/Logos/Logo_GithubWhite.png"]');
   for (let i = 0; i < githubImages.length; i++) {
-    githubImages[i].src = document.body.classList.contains('dark') ? "./assets/Logo_GithubWhite.png" : "./assets/Logo_Github.png";
+    githubImages[i].src = document.body.classList.contains('dark') ? "./assets/Logos/Logo_GithubWhite.png" : "./assets/Logos/Logo_Github.png";
   }
 });
