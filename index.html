@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="./index.js"></script>
+    <link rel="shortcut icon" href="./assets/Logos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" type="text/css" href="./styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" media="(max-width: 1100px)" href="./styles/responsive.css">
+    <script type="module" src="./main.js"></script>
     <title>Carlos Vasquez</title>
 </head>
 <body>
@@ -17,35 +21,51 @@
     </nav>
 
     <main>
-        <section class="welcome" id="welcome-seccion">
-            <div class="welcome-content">
-                <h1>¡Hola!, Soy Carlos</h1>
-                <h2>Desarrollador Backend</h2>
-                <p>Nunca paro de aprender, por lo que mi mayor virtud es la versatilidad para adaptarme a nuevos entornos</p>
-                
-                <figure>
-                    <img src="./assets/Logo_Mail.png" alt="Mail Logo">
-                    <figcaption><a>cvasquez.it@gmail.com</a></figcaption>
-                </figure>
 
-                <a href="https://www.linkedin.com/in/carlos-alberto-vasquez/" target="_blank" class="contact">
+        
+
+        <section class="pricipal-content">
+
+            <section class="options">
+                <button class="switch" id="switch">
+                    <span><img src="./assets/Logos/mode_light.png"></span>
+                    <span><img src="./assets/Logos/mode_dark.png"></span>
+                </button>
+            </section>
+
+            <section class="welcome" id="welcome-seccion">
+                <div class="welcome-content">
+                    <h1>¡Hola!, Soy Carlos</h1>
+                    <h2>Desarrollador Backend</h2>
+                    <p>Nunca paro de aprender, por lo que mi mayor virtud es la versatilidad para adaptarme a nuevos entornos</p>
+                    
                     <figure>
-                        <img src="./assets/Logo_LinkedIn.png" alt="LinkedIn Logo">
-                        <figcaption>carlos-alberto-vasquez</figcaption>
+                        <img src="./assets/Logos/Logo_Mail.png" alt="Mail Logo">
+                        <figcaption><a>cvasquez.it@gmail.com</a></figcaption>
                     </figure>
-                </a>
-
-                <a href="https://github.com/Carlos-Vasquez11" target="_blank" class="contact">
-                    <figure>
-                        <img src="./assets/Logo_Github.png" alt="Github Logo">
-                        <figcaption>Carlos-Vasquez11</figcaption>
-                    </figure>
-                </a>
+    
+                    <a href="https://www.linkedin.com/in/carlos-alberto-vasquez/" target="_blank" class="contact">
+                        <figure>
+                            <img src="./assets/Logos/Logo_LinkedIn.png" alt="LinkedIn Logo">
+                            <figcaption>carlos-alberto-vasquez</figcaption>
+                        </figure>
+                    </a>
+    
+                    <a href="https://github.com/Carlos-Vasquez11" target="_blank" class="contact">
+                        <figure>
+                            <img src="./assets/Logo_Github.png" alt="Github Logo">
+                            <figcaption>Carlos-Vasquez11</figcaption>
+                        </figure>
+                    </a>
+                    
+    
+                </div>
                 
+            </section>
 
-            </div>
-            
         </section>
+
+        
 
         <section class="skills" id="skills-seccion">
             <h1>Compentencias</h1>
@@ -89,7 +109,7 @@
         </section>
 
         <section class="projects" id="project-seccion">
-            <h1>proyectos</h1>
+            <h1>Proyectos</h1>
 
             <div class="project-container-skills">
                 <figure class="project-container">
@@ -103,7 +123,7 @@
                             </a>
     
                             <a href="./">
-                                <img src="./assets/Logo_web.png">
+                                <img src="./assets/Logos/Logo_web.png">
                             </a>
                         </div>
                         
@@ -114,6 +134,7 @@
                     <p>SKILLS</p>
                     <img src="./assets/Skills/Skill_HTML.png" class="tech-logo">
                     <img src="./assets/Skills/Skill_CSS.png" class="tech-logo">
+                    <img src="./assets/Skills/Skill_JS.png" class="tech-logo">
                 </div>
             </div>
 
@@ -155,7 +176,7 @@
                                 <img src="./assets/Logo_Github.png">
                             </a>
                             <a href="https://carlos-vasquez11.github.io/batataBit/" target="_blank">
-                                <img src="./assets/Logo_web.png">
+                                <img src="./assets/Logos/Logo_web.png">
                             </a>
                         </div>
                         
@@ -181,7 +202,7 @@
                                 <img src="./assets/Logo_Github.png">
                             </a>
                             <a href="https://carlos-vasquez11.github.io/clonDeGoogle/" target="_blank">
-                                <img src="./assets/Logo_web.png">
+                                <img src="./assets/Logos/Logo_web.png">
                             </a>
                         </div>
                     </figcaption>

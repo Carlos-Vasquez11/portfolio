@@ -1,0 +1,43 @@
+.menu{
+    display: none;
+}
+
+main{
+    width: 100vw;
+    padding: 0;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .project-container figcaption{
+    padding-left: 0px;
+}
+
+.skills figcaption{
+    width: 100%;
+    padding-left: 0;
+}
+
+.projects .project-container{
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+}
+
+.projects .project-container figcaption .links-container{
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.projects .project-container figcaption p{
+    font-size: 1.8rem;
+}
+
+.projects .project-container figcaption{
+    height: auto;
+}

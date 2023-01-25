@@ -1,15 +1,9 @@
 /*General*/
-:root{
-    --off-white:             #faf8f7;
-    --just-white:            #fff;
-    --secundary:             #5F738E;
-    --secundary-blue:        #1F3A93;
-}
-
 html{
     font-size: 62.5%;
-    background-color: var(--off-white);
+    background-color: var(--background);
     word-wrap: break-word;
+    width: 100%;
 }
 
 *{
@@ -18,14 +12,87 @@ html{
     padding: 0;
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
 }
 
 /*Body*/
+/* Options */
+
+.principal-content{
+    min-height: 100vh;
+    height: 90vh;
+}
+
+.options{
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.switch{
+    background-color: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch:active{
+    background-color: var(--secundary-blue);
+    color: #000;
+}
+
+.active{
+    background-color: var(--secundary-blue);
+    color: #000;
+}
+
+.active::after{
+    right: 0;
+    left: unset;
+}
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color:#fff
+}
+
+
+.switch span img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 /*Menu*/
 
 .menu{
-    width: 10%;
+    width: 10vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -38,7 +105,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .menu a{
@@ -48,6 +115,7 @@ html{
     color:white;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 15px;
 }
 
 /*Main*/
@@ -71,7 +139,16 @@ main .welcome{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 200px;
+    min-height: 100vh;
+
+}
+
+.welcome-content{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 main .welcome h1{
@@ -90,9 +167,8 @@ main .welcome p{
 
 main .welcome a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     width: 250px;
-    
 }
 
 main .welcome figure {
@@ -106,13 +182,13 @@ main .welcome figure {
 
 main .welcome figure figcaption{
     padding-left: 15px;
-    color: black;
+    color: var(--text-color);
     font-size: 1.8rem;
 }
 
 main .welcome figure figcaption a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-size: 1.8rem;
 }
 
@@ -125,6 +201,8 @@ main .welcome figure img{
 .skills{
     padding-top: 260px;
     padding-bottom: 260px;
+
+    min-height: 100vh;
 
 }
 
@@ -188,6 +266,7 @@ figure:hover img {
 .projects{
     padding-top: 75px;
     padding-bottom: 75px;
+    min-height: 100vh;
 }
 
 .projects h1{
@@ -270,3 +349,4 @@ figure:hover img {
     height: 32px;
     box-shadow: none;
 }
+
