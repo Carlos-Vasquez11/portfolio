@@ -4,7 +4,7 @@
 
 main{
     width: 100vw;
-    padding: 0;
+    padding-left: 0;
 }
 
 .skills{
@@ -36,8 +36,25 @@ main{
 
 .projects .project-container figcaption p{
     font-size: 1.8rem;
+    height: auto;
 }
 
 .projects .project-container figcaption{
     height: auto;
+}
+
+.projects .project-container img{
+    height: 300px;
+    width: 100%;
+}
+
+.project-skills{
+    align-items:flex-start;
+}
+
+.tech-logo{
+    margin: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
 }
